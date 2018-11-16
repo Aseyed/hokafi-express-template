@@ -39,7 +39,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb://hokafi:Abc1234@ds039301.mlab.com:39301/time-sheet',
+      uri: 'mongodb://localhost/time-sheet',
       options: {
         debug: true
       }
