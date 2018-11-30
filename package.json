@@ -4,7 +4,7 @@
   "main": "src",
   "private": true,
   "scripts": {
-    "start": "node . NODE_ENV=production MASTER_KEY=i0Z5GPrLT5PG8gusJ4lQKmMwQFYav7Gn JWT_SECRET=WFp10p7NYfuaFEFnObWhtYTph21rnEN1",
+    "start": "node . ",
     "test": "jest",
     "coverage": "npm test -- --coverage",
     "postcoverage": "opn coverage/lcov-report/index.html",
