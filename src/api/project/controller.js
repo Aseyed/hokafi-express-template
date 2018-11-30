@@ -14,7 +14,7 @@ export const index = ({user, querymen: { query, select, cursor } }, res, next) =
       .then((projects) => ({
         count,
         rows: projects.filter(pilot => pilot.createdBy.equals(user.id))
-        .map((project) => project.view())       
+              .map((project) => project.view())       
       }))
     )
     .then(success(res))

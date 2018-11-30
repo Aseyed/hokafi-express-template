@@ -39,7 +39,7 @@ const config = {
   test: { },
   development: {
     mongo: {
-      uri: 'mongodb://localhost/time-sheet',
+      uri: 'mongodb://limonad:Abc1234@ds042527.mlab.com:42527/limonad',
       options: {
         debug: true
       }
