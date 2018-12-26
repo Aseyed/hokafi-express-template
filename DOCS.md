@@ -5,6 +5,13 @@
 - [Auth](#auth)
 	- [Authenticate](#authenticate)
 	
+- [Event](#event)
+	- [Create event](#create-event)
+	- [Delete event](#delete-event)
+	- [Retrieve event](#retrieve-event)
+	- [Retrieve events](#retrieve-events)
+	- [Update event](#update-event)
+	
 - [Project](#project)
 	- [Create project](#create-project)
 	- [Delete project](#delete-project)
@@ -42,6 +49,89 @@
 | Name    | Type      | Description                          |
 |---------|-----------|--------------------------------------|
 | access_token			| String			|  <p>Master access_token.</p>							|
+
+# Event
+
+## Create event
+
+
+
+	POST /events
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| title			| 			|  <p>Event's title.</p>							|
+| eventDate			| 			|  <p>Event's eventDate.</p>							|
+| description			| 			|  <p>Event's description.</p>							|
+| registrationStartDate			| 			|  <p>Event's registrationStartDate.</p>							|
+| registrationEndDate			| 			|  <p>Event's registrationEndDate.</p>							|
+| registerUsers			| 			|  <p>Event's registerUsers.</p>							|
+| organizer			| 			|  <p>Event's organizer.</p>							|
+| more			| 			|  <p>Event's more.</p>							|
+| location			| 			|  <p>Event's location.</p>							|
+
+## Delete event
+
+
+
+	DELETE /events/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+
+## Retrieve event
+
+
+
+	GET /events/:id
+
+
+## Retrieve events
+
+
+
+	GET /events
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| q			| String			| **optional** <p>Query to search.</p>							|
+| page			| Number			| **optional** <p>Page number.</p>							|
+| limit			| Number			| **optional** <p>Amount of returned items.</p>							|
+| sort			| String[]			| **optional** <p>Order of returned items.</p>							|
+| fields			| String[]			| **optional** <p>Fields to be returned.</p>							|
+
+## Update event
+
+
+
+	PUT /events/:id
+
+
+### Parameters
+
+| Name    | Type      | Description                          |
+|---------|-----------|--------------------------------------|
+| access_token			| String			|  <p>admin access token.</p>							|
+| title			| 			|  <p>Event's title.</p>							|
+| eventDate			| 			|  <p>Event's eventDate.</p>							|
+| description			| 			|  <p>Event's description.</p>							|
+| registrationStartDate			| 			|  <p>Event's registrationStartDate.</p>							|
+| registrationEndDate			| 			|  <p>Event's registrationEndDate.</p>							|
+| registerUsers			| 			|  <p>Event's registerUsers.</p>							|
+| organizer			| 			|  <p>Event's organizer.</p>							|
+| more			| 			|  <p>Event's more.</p>							|
+| location			| 			|  <p>Event's location.</p>							|
 
 # Project
 

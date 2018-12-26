@@ -3,6 +3,10 @@ import user from './user'
 import auth from './auth'
 import project from './project'
 import event from './event'
+import location from './location'
+import act from './act'
+import task from './task'
+
 
 
 const router = new Router()
@@ -34,6 +38,10 @@ router.use('/users', user)
 router.use('/auth', auth)
 router.use('/projects', project)
 router.use('/events', event)
+router.use('/locations', location)
+router.use('/acts', act)
+router.use('/tasks', task)
+router.use('/tasks', task)
 
 
 export default router
