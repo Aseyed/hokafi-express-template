@@ -6,6 +6,7 @@ import event from './event'
 import location from './location'
 import act from './act'
 import task from './task'
+import sms from './sms'
 
 
 
@@ -42,6 +43,7 @@ router.use('/locations', location)
 router.use('/acts', act)
 router.use('/tasks', task)
 router.use('/tasks', task)
+router.use('/sms', sms)
 
 
 export default router
